@@ -46,7 +46,7 @@ async def add_category_callback_handler(query: CallbackQuery):
         await query.message.answer(text_ans, reply_markup=markup)
     else:
         if app.sepsis or app.points>20:
-            text_ans = 'Необходима консультация с краевым (ообластным) гнойно-септическим центром'
+            text_ans = 'Необходима консультация с краевым (областным) гнойно-септическим центром'
         elif app.points>11:
             text_ans = 'Необходима консультация с межрайонной больницей'
         else:
@@ -70,7 +70,7 @@ async def add_category_callback_handler(query: CallbackQuery):
         await query.message.answer(text_ans, reply_markup=markup)
     else:
         if app.sepsis or app.points>20:
-            text_ans = 'Необходима консультация с краевым (ообластным) гнойно-септическим центром'
+            text_ans = 'Необходима консультация с краевым (областным) гнойно-септическим центром'
         elif app.points>11:
             text_ans = 'Необходима консультация с межрайонной больницей'
         else:
